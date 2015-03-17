@@ -1,4 +1,4 @@
-var matchColumnHeight = function (columns) {
+var equalHeightColumns = function (columns) {
 	var countOfColumns = [];
 	var heightsOfColumns = [];
 
