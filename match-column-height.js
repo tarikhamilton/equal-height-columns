@@ -1,16 +1,17 @@
-var equalHeights = function (columns) {
-
+var matchColumnHeight = function (columns) {
 	var countOfColumns = [];
 	var heightsOfColumns = [];
-	var i = 0;
 
-	while (i < columns.length) {
+	for (var i = 0; i < columns.length; i++)
 		countOfColumns.push(0);
-		i++;
-	} 
+
 	countOfColumns.forEach.call(columns, function (c, i, a) { 
 		heightsOfColumns.push([c, a[i].clientHeight]); 
 	});
-	heightsOfColumns.sort(function (a, b) { return a[1] - b[1] });
-	console.dir(heightsOfColumns);
+
+	heightsOfColumns.sort(function (a, b) { 
+		return b[1] - a[1] });
+
+	for (column in columns)
+		columns[column].style.height = heightsOfColumns[0][1] + "px";
 }
