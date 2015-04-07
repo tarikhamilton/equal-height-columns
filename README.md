@@ -1,7 +1,7 @@
 equal-height-columns
 ====================
 
-Make any class have the same height as the tallest one in the group in pure vanilla JavaScript. Great for Bootstrap.
+Make any class have the same height as the tallest one in the group in pure vanilla JavaScript. Great for Bootstrap. Check out a live example on my personal site, [tarikhamilton.com](http://tarikhamilton.com). Resize the columns to see it debounced.
 
 ```
 var columns = document.getElementsByClassName('col-sm-3');
