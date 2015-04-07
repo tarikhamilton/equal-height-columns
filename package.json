@@ -1,0 +1,22 @@
+{
+  "name": "equal-height-columns",
+  "version": "1.0.0",
+  "description": "Set the height to the tallest element's height in a class.",
+  "main": "equal-height-columns.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tikitariki/equal-height-columns.git"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "Tarik Hamilton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tikitariki/equal-height-columns/issues"
+  },
+  "homepage": "https://github.com/tikitariki/equal-height-columns"
+}
