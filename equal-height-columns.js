@@ -1,4 +1,4 @@
-var equalHeightColumns = function (columns) {
+equalHeightColumns = function (columns) {
 	var countOfColumns = [];
 	var heightsOfColumns = [];
 
@@ -6,12 +6,14 @@ var equalHeightColumns = function (columns) {
 		countOfColumns.push(0);
 
 	countOfColumns.forEach.call(columns, function (c, i, a) { 
-		heightsOfColumns.push([c, a[i].clientHeight]); 
+		a[i].style.height = "auto"; 
+		heightsOfColumns.push([c, a[i].clientHeight]);
 	});
-
+		
 	heightsOfColumns.sort(function (a, b) { 
-		return b[1] - a[1] });
+		return b[1] - a[1]; });
 
-	for (column in columns)
-		columns[column].style.height = heightsOfColumns[0][1] + "px";
-}
+	for (var column in columns)
+		if (column < columns.length)
+			columns[column].style.height = heightsOfColumns[0][1] + "px";
+};
